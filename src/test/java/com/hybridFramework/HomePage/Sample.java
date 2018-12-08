@@ -27,6 +27,7 @@ public class Sample extends ResourceHelper{
 		int i=10;
 		String s;
 		s=String.valueOf(i);
+		System.out.println("Edited");
 	}
 	
 }
