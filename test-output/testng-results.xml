@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7971" started-at="2018-12-07T17:49:12Z" finished-at="2018-12-07T17:49:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7971" started-at="2018-12-07T17:49:12Z" finished-at="2018-12-07T17:49:20Z">
+      <class name="com.hybridFramework.Login.LoginTest">
+        <test-method status="PASS" signature="startReport(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31]" name="startReport" is-config="true" duration-ms="11" started-at="2018-12-07T23:19:12Z" finished-at="2018-12-07T23:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hybridFramework.Login.LoginTest.login() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31]" name="login" duration-ms="7630" started-at="2018-12-07T23:19:12Z" finished-at="2018-12-07T23:19:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="stopLog()[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31]" name="stopLog" is-config="true" duration-ms="306" started-at="2018-12-07T23:19:20Z" finished-at="2018-12-07T23:19:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopLog -->
+        <test-method status="PASS" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31]" name="captureResult" is-config="true" duration-ms="0" started-at="2018-12-07T23:19:20Z" finished-at="2018-12-07T23:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login()[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureResult -->
+      </class> <!-- com.hybridFramework.Login.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
