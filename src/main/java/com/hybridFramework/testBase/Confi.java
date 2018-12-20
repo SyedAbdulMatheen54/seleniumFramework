@@ -11,4 +11,14 @@ public class Confi extends TestBase
 	{
 		return Integer.parseInt(pro.getProperty("implicitWait"));
 	}
+	
+	public String getBrowserName()
+	{
+		return pro.getProperty("browser");
+	}
+	
+	public String getUrl()
+	{
+		return pro.getProperty("url");
+	}
 }

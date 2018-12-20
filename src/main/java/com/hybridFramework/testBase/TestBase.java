@@ -33,7 +33,9 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.hybridFramework.ExcelReader.ExcelReader;
@@ -65,7 +67,31 @@ public class TestBase {
 			String Log_path="log4j.properties";
 			//Here we will specifiy our Logger propery file
 			PropertyConfigurator.configure(Log_path);
-			System.out.println("static block");
+			TestBase test=new TestBase();
+			try {
+				test.loadProportiesFile();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			Confi config=new Confi();
+			//System.out.println("launch browser");
+			//test.getBrowser(config.getBrowserName());
+			System.out.println("static method");
+		}
+		
+		@BeforeTest
+		public void launchBrowser()
+		{
+			Confi config=new Confi();
+			System.out.println("launch browser");
+			getBrowser(config.getBrowserName());
+		}
+		
+		@AfterTest(alwaysRun=true)
+		public void closeBrowser()
+		{
+			driver.close();
 		}
 		
 		//Before test method we need to start logging
@@ -90,9 +116,9 @@ public class TestBase {
 			}
 			else if(result.getStatus()==ITestResult.FAILURE)
 			{
-				logger.log(LogStatus.FAIL, result.getName()+" was failed");
+				/*logger.log(LogStatus.FAIL, result.getName()+" was failed");
 				String path=getScreesnhot("sample");
-				logger.addScreenCapture(path);
+				logger.addScreenCapture(path);*/
 			}
 		}
 		@AfterMethod
@@ -121,6 +147,7 @@ public class TestBase {
 			{
 				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 				driver=new ChromeDriver();
+				driver.manage().window().maximize();
 			}
 			else if(browser.equalsIgnoreCase("firefox"))
 			{
@@ -224,12 +251,12 @@ public class TestBase {
 		return excelData.getExcelData(excelPath, sheetName);
 	}
 	
-	public static void main(String str[]) throws IOException
+	/*public static void main(String str[]) throws IOException
 	{
 		TestBase test=new TestBase();
 		
 		//To read data from excel File
-		/*String excelP=System.getProperty("user.dir")+"/src/main/java/com/hybridFramework/data/Credentials.xlsx";
+		String excelP=System.getProperty("user.dir")+"/src/main/java/com/hybridFramework/data/Credentials.xlsx";
 		String sheetN="login";
 		String excelData[][];
 		excelData=test.getExcelData(excelP, sheetN);
@@ -239,11 +266,11 @@ public class TestBase {
 			{
 				System.out.println(excelData[i][j]);;
 			}
-		}*/
+		}
 		test.loadProportiesFile();
 //		test.getBrowser("chrome");
 		
-		/*//wait till element is submit button is clickable
+		//wait till element is submit button is clickable
 		test.driver.get("http://abdul:82/login.do");
 		WebElement submit_button=test.driver.findElement(By.cssSelector("input[type='submit']"));
 		test.explicitWait(test.driver, 10, submit_button);
@@ -270,8 +297,8 @@ public class TestBase {
 		WebElement submit_button=test.driver.findElement(By.cssSelector("input[type='submit']"));
 		test.fluentWaitFunction(test.driver, submit_button, 10, 3);
 		System.out.println("wait completed");
-		test.driver.quit();*/
+		test.driver.quit();
 		
-	}
+	}*/
 	
 }

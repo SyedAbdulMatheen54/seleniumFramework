@@ -7,8 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hybridFramework.helper.WaitHelper;
 import com.hybridFramework.testBase.Confi;
+import com.hybridFramework.testBase.TestBase;
 
-public class LoginPage {
+public class LoginPage extends TestBase {
 	
 	WebDriver driver;
 	
@@ -16,10 +17,10 @@ public class LoginPage {
 	WebElement userName;
 	
 	@FindBy(name="pwd")
-	WebElement password;
+	WebElement passwordobj;
 	
 	@FindBy(xpath="//input[contains(@value,'Login now')]")
-	WebDriver loginButton;
+	WebElement loginButton;
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -29,8 +30,24 @@ public class LoginPage {
 		wait.waitTillElementVisible(driver, new Confi().getExplicitWaitTime(), userName);
 	}
 
-	public void enterUserName()
+	public void enterUserName(String username)
 	{
-		userName.sendKeys("admin");
+		userName.sendKeys(username);
+	}
+	public void enterPassword(String password)
+	{
+		passwordobj.sendKeys(password);
+	}
+	public void clickOnLogin()
+	{
+		loginButton.click();
+	}
+	
+	public void loginToActi(String username, String password)
+	{
+		enterUserName(username);
+		enterPassword(password);
+		clickOnLogin();
+		
 	}
 }

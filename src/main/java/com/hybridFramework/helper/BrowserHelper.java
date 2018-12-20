@@ -1,6 +1,11 @@
 package com.hybridFramework.helper;
 
-public class BrowserHelper {
+import com.hybridFramework.testBase.TestBase;
 
-	
+public class BrowserHelper extends TestBase{
+
+	public void maximizeBrowser()
+	{
+		driver.manage().window().maximize();
+	}
 }

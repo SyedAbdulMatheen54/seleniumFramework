@@ -2,12 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7971" started-at="2018-12-07T17:49:12Z" finished-at="2018-12-07T17:49:20Z">
+  <suite name="Default suite" duration-ms="7009" started-at="2018-12-20T15:24:57Z" finished-at="2018-12-20T15:25:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7971" started-at="2018-12-07T17:49:12Z" finished-at="2018-12-07T17:49:20Z">
+    <test name="Default test" duration-ms="7009" started-at="2018-12-20T15:24:57Z" finished-at="2018-12-20T15:25:04Z">
       <class name="com.hybridFramework.Login.LoginTest">
-        <test-method status="PASS" signature="startReport(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31]" name="startReport" is-config="true" duration-ms="11" started-at="2018-12-07T23:19:12Z" finished-at="2018-12-07T23:19:12Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.hybridFramework.Login.LoginTest@9cfc36]" name="launchBrowser" is-config="true" duration-ms="4333" started-at="2018-12-20T20:54:57Z" finished-at="2018-12-20T20:55:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="startReport(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.Login.LoginTest@9cfc36]" name="startReport" is-config="true" duration-ms="4" started-at="2018-12-20T20:55:01Z" finished-at="2018-12-20T20:55:01Z">
           <params>
             <param index="0">
               <value>
@@ -18,25 +22,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31]" name="login" duration-ms="7630" started-at="2018-12-07T23:19:12Z" finished-at="2018-12-07T23:19:20Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.hybridFramework.Login.LoginTest@9cfc36]" name="login" duration-ms="1152" started-at="2018-12-20T20:55:01Z" finished-at="2018-12-20T20:55:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="stopLog()[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31]" name="stopLog" is-config="true" duration-ms="306" started-at="2018-12-07T23:19:20Z" finished-at="2018-12-07T23:19:20Z">
+        <test-method status="PASS" signature="stopLog()[pri:0, instance:com.hybridFramework.Login.LoginTest@9cfc36]" name="stopLog" is-config="true" duration-ms="742" started-at="2018-12-20T20:55:02Z" finished-at="2018-12-20T20:55:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopLog -->
-        <test-method status="PASS" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31]" name="captureResult" is-config="true" duration-ms="0" started-at="2018-12-07T23:19:20Z" finished-at="2018-12-07T23:19:20Z">
+        <test-method status="PASS" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.Login.LoginTest@9cfc36]" name="captureResult" is-config="true" duration-ms="0" started-at="2018-12-20T20:55:02Z" finished-at="2018-12-20T20:55:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login()[pri:0, instance:com.hybridFramework.Login.LoginTest@950e31] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login()[pri:0, instance:com.hybridFramework.Login.LoginTest@9cfc36] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hybridFramework.Login.LoginTest@9cfc36]" name="closeBrowser" is-config="true" duration-ms="758" started-at="2018-12-20T20:55:03Z" finished-at="2018-12-20T20:55:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.hybridFramework.Login.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

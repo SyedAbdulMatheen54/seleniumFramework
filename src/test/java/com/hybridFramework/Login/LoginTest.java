@@ -6,19 +6,17 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import com.hybridFramework.PageObject.LoginPage;
+import com.hybridFramework.testBase.Confi;
 import com.hybridFramework.testBase.TestBase;
 
 public class LoginTest extends TestBase{
-	WebDriver driver;
+	
 	@Test
 	public void login() throws IOException
 	{
-		driver=getBrowser("chrome");
-		loadProportiesFile();
-		driver.get(TestBase.pro.getProperty("url"));
-		LoginPage loginPageObj=new LoginPage(driver);
-		loginPageObj.enterUserName();
-		driver.close();
-		System.out.println("Done");
+		Confi config=new Confi();
+		driver.get(config.getUrl());
+		LoginPage login=new LoginPage(driver);
+		login.loginToActi(pro.getProperty("actiValidUserName"),pro.getProperty("actiValidPass"));
 	}
 }
