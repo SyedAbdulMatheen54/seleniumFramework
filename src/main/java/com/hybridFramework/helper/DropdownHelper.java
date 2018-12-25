@@ -14,10 +14,16 @@ public class DropdownHelper {
 	 private WebDriver driver;
 	
 	//help in select option of dropdown with text
-	public void  selectByText(WebElement element,String value)
+	public void  selectUsingText(WebElement element,String value)
 	{
 		Select select=new Select(element);
 		select.selectByVisibleText(value);
+	}
+	
+	public void selectUsingIndex(WebElement element,int index)
+	{
+		Select select=new Select(element);
+		select.selectByIndex(index);
 	}
 	
 	public List<String> getAllDropdownValue(WebElement element)

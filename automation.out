@@ -143,3 +143,62 @@
 2018-12-20 20:54:57 INFO  TestBase:191 - Loading config.properties
 2018-12-20 20:54:57 ERROR TestBase:192 - Sample Error
 2018-12-20 20:54:57 INFO  TestBase:198 - Loading or.properties
+2018-12-21 19:27:54 INFO  TestBase:191 - Loading config.properties
+2018-12-21 19:27:54 ERROR TestBase:192 - Sample Error
+2018-12-21 19:27:54 INFO  TestBase:198 - Loading or.properties
+2018-12-21 19:28:10 INFO  TestBase:14 - Checking element state
+2018-12-21 19:31:55 INFO  TestBase:191 - Loading config.properties
+2018-12-21 19:31:55 ERROR TestBase:192 - Sample Error
+2018-12-21 19:31:55 INFO  TestBase:198 - Loading or.properties
+2018-12-21 19:32:03 INFO  TestBase:14 - Checking element state
+2018-12-21 19:32:04 INFO  TestBase:23 - Element is not present
+2018-12-21 19:33:42 INFO  TestBase:191 - Loading config.properties
+2018-12-21 19:33:42 ERROR TestBase:192 - Sample Error
+2018-12-21 19:33:42 INFO  TestBase:198 - Loading or.properties
+2018-12-21 19:33:49 INFO  TestBase:14 - Checking element state
+2018-12-21 19:33:49 INFO  TestBase:23 - Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Logout']' is not present
+2018-12-21 19:49:34 INFO  TestBase:191 - Loading config.properties
+2018-12-21 19:49:34 ERROR TestBase:192 - Sample Error
+2018-12-21 19:49:34 INFO  TestBase:198 - Loading or.properties
+2018-12-21 19:49:45 INFO  TestBase:14 - Checking element state
+2018-12-21 19:49:46 INFO  TestBase:23 - Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Logout']' is not present
+2018-12-22 10:15:13 INFO  TestBase:193 - Loading config.properties
+2018-12-22 10:15:13 ERROR TestBase:194 - Sample Error
+2018-12-22 10:15:13 INFO  TestBase:200 - Loading or.properties
+2018-12-22 10:15:28 INFO  TestBase:14 - Checking element state
+2018-12-22 10:15:29 INFO  TestBase:23 - Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Logout']' is not present
+2018-12-22 10:20:01 INFO  TestBase:193 - Loading config.properties
+2018-12-22 10:20:01 ERROR TestBase:194 - Sample Error
+2018-12-22 10:20:01 INFO  TestBase:200 - Loading or.properties
+2018-12-22 10:20:07 INFO  TestBase:14 - Checking element state
+2018-12-22 10:20:07 INFO  TestBase:23 - Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Logout']' is not present
+2018-12-22 10:24:43 INFO  TestBase:193 - Loading config.properties
+2018-12-22 10:24:43 ERROR TestBase:194 - Sample Error
+2018-12-22 10:24:43 INFO  TestBase:200 - Loading or.properties
+2018-12-22 10:24:51 INFO  TestBase:14 - Checking element state
+2018-12-22 10:24:51 INFO  TestBase:23 - Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Logout']' is not present
+2018-12-22 10:27:40 INFO  TestBase:194 - Loading config.properties
+2018-12-22 10:27:40 ERROR TestBase:195 - Sample Error
+2018-12-22 10:27:40 INFO  TestBase:201 - Loading or.properties
+2018-12-22 10:27:46 INFO  TestBase:14 - Checking element state
+2018-12-22 10:27:47 INFO  TestBase:23 - Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Logout']' is not present
+2018-12-22 10:31:18 INFO  TestBase:193 - Loading config.properties
+2018-12-22 10:31:18 ERROR TestBase:194 - Sample Error
+2018-12-22 10:31:18 INFO  TestBase:200 - Loading or.properties
+2018-12-22 10:31:25 INFO  TestBase:14 - Checking element state
+2018-12-22 10:31:26 INFO  TestBase:23 - Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Logout']' is not present
+2018-12-23 14:05:58 INFO  TestBase:193 - Loading config.properties
+2018-12-23 14:05:58 ERROR TestBase:194 - Sample Error
+2018-12-23 14:05:58 INFO  TestBase:200 - Loading or.properties
+2018-12-23 14:06:44 INFO  TestBase:193 - Loading config.properties
+2018-12-23 14:06:44 ERROR TestBase:194 - Sample Error
+2018-12-23 14:06:44 INFO  TestBase:200 - Loading or.properties
+2018-12-23 14:07:57 INFO  TestBase:193 - Loading config.properties
+2018-12-23 14:07:57 ERROR TestBase:194 - Sample Error
+2018-12-23 14:07:57 INFO  TestBase:200 - Loading or.properties
+2018-12-23 14:13:58 INFO  TestBase:193 - Loading config.properties
+2018-12-23 14:13:58 ERROR TestBase:194 - Sample Error
+2018-12-23 14:13:58 INFO  TestBase:200 - Loading or.properties
+2018-12-23 14:14:18 INFO  TestBase:193 - Loading config.properties
+2018-12-23 14:14:18 ERROR TestBase:194 - Sample Error
+2018-12-23 14:14:18 INFO  TestBase:200 - Loading or.properties

@@ -1,61 +1,72 @@
 package com.hybridFramework.helper;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 
 public class AlertHelper {
+	private WebDriver driver;
 	
-	Alert alert;
-	public void switchToAlert(WebDriver driver)
-	{	
-		try
-		{
-			alert=driver.switchTo().alert();
-		}
-		catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-		}
-		
-	}
-
-	public void sendKeyToAlert(String data)
+	//Initialize webdriver
+	public AlertHelper(WebDriver driver) 
 	{
-		try
-		{
-			alert.sendKeys(data);
-		}
-		catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-		}
-		
+		this.driver=driver;
 	}
 	
-	public void dismissAlert()
+	//This method will acts as a wrapper method
+	public Alert getAlert()
 	{
-		try
-		{
-			alert.dismiss();
-		}
-		catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-		}
-		
+		return driver.switchTo().alert();
 	}
-	
+	//accept alert
 	public void acceptAlert()
 	{
+		getAlert().accept();
+	}
+	//Dismiss Alert
+	public void dismissAlert()
+	{
+		getAlert().dismiss();
+	}
+	
+	public String getAlertText()
+	{
+		return getAlert().getText();
+	}
+	
+	public void sendKeysInAlert(String key)
+	{
+		getAlert().sendKeys(key);
+	}
+	
+	//customize constructor to check Alert is present or not
+	public boolean alertIsPresent()
+	{
 		try
 		{
-			alert.dismiss();
+			driver.switchTo().alert();
+			return true;
 		}
-		catch(Exception e)
+		catch(NoAlertPresentException e)
 		{
-			System.out.println(e.getMessage());
+			return false;
 		}
-		
+	}
+	
+	public void acceptAlertIfPresent()
+	{
+		if(!alertIsPresent())
+			return;
+		acceptAlert();
+	}
+	
+	//Send key in alert and accept alert
+	public void sendKeyIfAlertPresent(String val)
+	{
+		if(!alertIsPresent())
+			return;
+		sendKeysInAlert(val);
+		acceptAlert();
 	}
 	
 }

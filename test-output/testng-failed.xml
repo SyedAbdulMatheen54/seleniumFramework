@@ -3,16 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.hybridFramework.Login.LoginTest">
+      <class name="com.hybridFramework.report.Sample">
         <methods>
-          <include name="login"/>
-          <include name="startReport"/>
-          <include name="captureResult"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="stopLog"/>
+          <include name="sample"/>
         </methods>
-      </class> <!-- com.hybridFramework.Login.LoginTest -->
+      </class> <!-- com.hybridFramework.report.Sample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

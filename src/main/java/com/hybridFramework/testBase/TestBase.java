@@ -54,15 +54,16 @@ public class TestBase {
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	public static ITestResult result;
-	public static final Logger L_Logger=Logger.getLogger(TestBase.class.getName());
+	public static final Logger L_Logger=Logger.getLogger(TestBase.class);
 	
 	//In order to generate report we need to first create object of ExtentReports, 
 	//Since this is static block, this block will be executed 1st before creating any object
 		static
 		{
 			Calendar cal=Calendar.getInstance();
-			SimpleDateFormat formatter=new SimpleDateFormat("dd_mm_yy_hh_mm_ss");
+			SimpleDateFormat formatter=new SimpleDateFormat("dd_MM_yy_hh_mm_ss");
 			String timeStamp=formatter.format(cal.getTime());
+			System.out.println(timeStamp);
 			extent=new ExtentReports(System.getProperty("user.dir")+"/src/main/java/com/hybridFramework/report/test"+timeStamp+".html",false);
 			String Log_path="log4j.properties";
 			//Here we will specifiy our Logger propery file
@@ -116,9 +117,9 @@ public class TestBase {
 			}
 			else if(result.getStatus()==ITestResult.FAILURE)
 			{
-				/*logger.log(LogStatus.FAIL, result.getName()+" was failed");
+				logger.log(LogStatus.FAIL, result.getName()+" was failed");
 				String path=getScreesnhot("sample");
-				logger.addScreenCapture(path);*/
+				logger.addScreenCapture(path);
 			}
 		}
 		@AfterMethod
@@ -136,6 +137,7 @@ public class TestBase {
 			extent.endTest(logger);
 			//Save log under html file
 			extent.flush();
+			System.out.println("End Report");
 		}
 		
 	public WebDriver getBrowser(String browser)
